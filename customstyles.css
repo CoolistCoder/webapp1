@@ -1,0 +1,40 @@
+/*force a margin for all images*/
+img {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+
+/* Draws a regular bob*/
+.bobstyle {
+    image-rendering: optimizeSpeed;
+    width: 100px;
+}
+
+/* Draws a flipped bob*/
+.bobflip {
+    image-rendering: optimizeSpeed;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    width: 100px;
+}
+
+/* Draws a flipped red bob*/
+.bobflip.green {
+    filter: hue-rotate(80deg);
+}
+
+/*force all whitespace to newline*/
+.formatStory {
+    white-space: pre;
+}
+
+/*Boat image processing details*/
+.imgproc1{
+    width: 400px;
+    float: left;
+    margin-left:10px;
+    position: relative;
+    filter: saturate(1800%);
+    filter: grayscale(40%);
+}
